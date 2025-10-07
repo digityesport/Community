@@ -1,0 +1,42 @@
+title: "[Bug] "
+body:
+  - type: dropdown
+    id: area
+    attributes:
+      label: Zone
+      options: ["web", "bot"]
+      description: Où se produit le bug ?
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Étapes pour reproduire
+      placeholder: |
+        1. ...
+        2. ...
+        3. ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Résultat attendu
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Résultat obtenu
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Version (si connu)
+      placeholder: "ex. 1.2.3"
+  - type: textarea
+    id: context
+    attributes:
+      label: Contexte
+      description: "Navigateur (web), logs (bot), captures, etc."

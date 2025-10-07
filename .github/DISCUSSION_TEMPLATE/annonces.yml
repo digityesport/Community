@@ -1,0 +1,37 @@
+title: "[Annonce] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Annonce officielle
+        Merci de garder ce fil informatif.
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Type
+      options: ["changelog", "roadmap", "maintenance", "événement"]
+    validations:
+      required: true
+  - type: textarea
+    id: summary
+    attributes:
+      label: Résumé (TL;DR)
+      placeholder: TL;DR — ce qui change / ce qui arrive
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Détails
+      description: "Liens vers issues/PR, dates de déploiement, instructions"
+      placeholder: |
+        • Lien issue/PR ...
+        • Date ...
+        • Impact utilisateur ...
+  - type: checkboxes
+    id: confirm
+    attributes:
+      label: Confirmation
+      options:
+        - label: Je confirme publier au nom des mainteneurs
+          required: true

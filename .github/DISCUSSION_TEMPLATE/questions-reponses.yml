@@ -1,0 +1,20 @@
+title: "[Q] "
+body:
+  - type: dropdown
+    id: area
+    attributes:
+      label: Zone
+      options: ["web", "bot", "général"]
+    validations:
+      required: true
+  - type: textarea
+    id: question
+    attributes:
+      label: Détail de la question
+      placeholder: Explique clairement le problème / ce que tu as essayé
+    validations:
+      required: true
+  - type: textarea
+    id: refs
+    attributes:
+      label: Liens / captures (facultatif)
