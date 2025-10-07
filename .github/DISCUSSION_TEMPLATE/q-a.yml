@@ -3,18 +3,22 @@ body:
   - type: dropdown
     id: area
     attributes:
-      label: Zone
+      label: "Zone / Area"
       options: ["web", "bot", "général"]
     validations:
       required: true
   - type: textarea
     id: question
     attributes:
-      label: Détail de la question
-      placeholder: Explique clairement le problème / ce que tu as essayé
+      label: "Détail de la question / Question details"
+      placeholder: |
+        FR:
+        Explique clairement le problème et ce que tu as essayé
+        EN:
+        Clearly explain the issue and what you have tried
     validations:
       required: true
   - type: textarea
     id: refs
     attributes:
-      label: Liens / captures (facultatif)
+      label: "Liens / captures (facultatif) / Links / screenshots (optional)"

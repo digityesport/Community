@@ -3,40 +3,42 @@ body:
   - type: dropdown
     id: area
     attributes:
-      label: Zone
+      label: "Zone / Area"
       options: ["web", "bot"]
-      description: Où se produit le bug ?
+      description: "Où se produit le bug ? / Where does the bug occur?"
     validations:
       required: true
   - type: textarea
     id: steps
     attributes:
-      label: Étapes pour reproduire
+      label: "Étapes pour reproduire / Steps to reproduce"
       placeholder: |
         1. ...
         2. ...
         3. ...
+        FR: Décris les étapes minimales
+        EN: Describe minimal steps
     validations:
       required: true
   - type: textarea
     id: expected
     attributes:
-      label: Résultat attendu
+      label: "Résultat attendu / Expected result"
     validations:
       required: true
   - type: textarea
     id: actual
     attributes:
-      label: Résultat obtenu
+      label: "Résultat obtenu / Actual result"
     validations:
       required: true
   - type: input
     id: version
     attributes:
-      label: Version (si connu)
+      label: "Version (si connu) / Version (if known)"
       placeholder: "ex. 1.2.3"
   - type: textarea
     id: context
     attributes:
-      label: Contexte
-      description: "Navigateur (web), logs (bot), captures, etc."
+      label: "Contexte / Context"
+      description: "Navigateur (web), logs (bot), captures, etc. / Browser (web), logs (bot), screenshots, etc."

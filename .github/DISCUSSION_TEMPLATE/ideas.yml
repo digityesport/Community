@@ -1,32 +1,36 @@
-title: "[Idée] "
+title: "[Idea] "
 body:
   - type: markdown
     attributes:
-      value: "Votez avec 👍 pour prioriser."
+      value: "Votez avec 👍 pour prioriser. / Upvote with 👍 to prioritize."
   - type: dropdown
     id: area
     attributes:
-      label: Zone
+      label: "Zone / Area"
       options: ["web", "bot"]
-      description: Où s'applique l'idée ?
+      description: "Où s'applique l'idée ? / Where does the idea apply?"
     validations:
       required: true
   - type: textarea
     id: problem
     attributes:
-      label: Contexte / problème
-      placeholder: Quel problème utilisateur veut-on résoudre ?
+      label: "Contexte / problème / Context / problem"
+      placeholder: "Quel problème utilisateur veut-on résoudre ? / What user problem are we solving?"
     validations:
       required: true
   - type: textarea
     id: solution
     attributes:
-      label: Idée de solution
-      placeholder: "En tant que <rôle>, je veux <action> afin de <valeur>"
+      label: "Idée de solution / Proposed solution"
+      placeholder: |
+        FR:
+        En tant que <rôle>, je veux <action> afin de <valeur>
+        EN:
+        As a <role>, I want <action> so that <value>
     validations:
       required: true
   - type: textarea
     id: impacts
     attributes:
-      label: Impact / alternatives
-      description: Alternatives, risques, mesure de succès
+      label: "Impact / alternatives / Impact / alternatives"
+      description: "Alternatives, risques, mesure de succès / Alternatives, risks, success measures"

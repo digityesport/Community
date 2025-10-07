@@ -1,37 +1,42 @@
-title: "[Annonce] "
+title: "[Announcement] "
 body:
   - type: markdown
     attributes:
       value: |
-        ## Annonce officielle
-        Merci de garder ce fil informatif.
+        ## Annonce officielle / Official announcement
+        Merci de garder ce fil informatif. / Please keep this thread informative.
   - type: dropdown
     id: kind
     attributes:
-      label: Type
-      options: ["changelog", "roadmap", "maintenance", "événement"]
+      label: "Type"
+      options: ["changelog", "roadmap", "maintenance", "événement / event"]
     validations:
       required: true
   - type: textarea
     id: summary
     attributes:
-      label: Résumé (TL;DR)
-      placeholder: TL;DR — ce qui change / ce qui arrive
+      label: "Résumé (TL;DR) / Summary (TL;DR)"
+      placeholder: "TL;DR — ce qui change / ce qui arrive — what’s changing / what’s coming"
     validations:
       required: true
   - type: textarea
     id: details
     attributes:
-      label: Détails
-      description: "Liens vers issues/PR, dates de déploiement, instructions"
+      label: "Détails / Details"
+      description: "Liens vers issues/PR, dates de déploiement, instructions / Links to issues/PRs, deployment dates, instructions"
       placeholder: |
+        FR:
         • Lien issue/PR ...
         • Date ...
         • Impact utilisateur ...
+        EN:
+        • Issue/PR link ...
+        • Date ...
+        • User impact ...
   - type: checkboxes
     id: confirm
     attributes:
-      label: Confirmation
+      label: "Confirmation"
       options:
-        - label: Je confirme publier au nom des mainteneurs
+        - label: "Je confirme publier au nom des mainteneurs / I confirm I’m publishing on behalf of the maintainers"
           required: true
