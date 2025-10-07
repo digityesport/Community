@@ -15,7 +15,11 @@ body:
     id: problem
     attributes:
       label: "Contexte / problème / Context / problem"
-      placeholder: "Quel problème utilisateur veut-on résoudre ? / What user problem are we solving?"
+      placeholder: |
+        FR:
+        Quel problème utilisateur veut-on résoudre ?
+        EN:
+        What user problem do we want to solve?
     validations:
       required: true
   - type: textarea
@@ -33,4 +37,8 @@ body:
     id: impacts
     attributes:
       label: "Impact / alternatives / Impact / alternatives"
-      description: "Alternatives, risques, mesure de succès / Alternatives, risks, success measures"
+      placeholder: |
+        FR:
+        Alternatives, risques, mesure de succès
+        EN:
+        Alternatives, risks, measure of success
